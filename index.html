@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub User Viewer</title>
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/d35204559b.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    #wrapper {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar is-dark " role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <p class="is-size-5"><strong class="has-text-white">GitHub User Viewer</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="wrapper">
+    <div class="container">
+      <div class="card">
+        <div class="card-content search-card">
+          <p class="title is-size-1">
+            Search GitHub Users
+          </p>
+          <p class="subtitle">
+            Enter a username to fetch a user's profile info and repositories
+          </p>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="Input username" id="search-input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="profile">
+    </div>
+    <br>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>GitHub User Viewer</strong> by <a href="https://github.com/onecarlosmunoz">Juan Carlos Muñoz</a>. Made with Bulma.<br>
+          A small project to practice FETCH APIs with. Based on Brad Traversy's <a href="https://www.udemy.com/course/modern-javascript-from-the-beginning/">online JavaScript course</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/github.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
